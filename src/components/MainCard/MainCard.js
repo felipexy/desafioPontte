@@ -29,15 +29,17 @@ const MainCard = () => {
     //options.parcelas[0][0]
 
     var cardOptions = [];
+    let qtdeOptions = 0;
+
+    const defineQtdeOptions = () => {
+        options.prazos.forEach(prazo => {
+            qtdeOptions++;
+        });
+        return qtdeOptions;    
+    }
 
     function optionCardMount(valor){
-        const bla = 0;
-        //options.map(op => {
-        //    bla++;
-        //    console.log(bla);
-        //})
-
-        for (var i = 0; i <= 4; i++){ //AQUIIIIIIIIIIIIIIIIIIIIIII
+        for (var i = 0; i < qtdeOptions; i++){
             cardOptions.push(<CardMonths key={i} months={options.prazos[i]} value={options.parcelas[i][valor]}></CardMonths>);    
         }
     }
@@ -52,8 +54,8 @@ const MainCard = () => {
                     <h1 className="valueText">R$ {valueTitle}</h1>
                     <h3 className="grossAmount">Valor bruto: R$ {grossAmount} <i className="questMarkIcon"></i></h3>
                 </div>
-                <div>
-                    <Slider min="0" max="4"></Slider> 
+                <div>{defineQtdeOptions()}
+                    <Slider min="0" max={qtdeOptions}></Slider> 
                     <div>
                         <h3 className="selectQty">Selecione a quantidade de parcelas</h3>
                     </div>
@@ -68,7 +70,7 @@ const MainCard = () => {
         );
     } else {
         return (
-            <h2>namoral lek só vai</h2> //AQUIIIIIIIIIIIIIIII
+            <div class="loader"></div>
         );
     }
 };
