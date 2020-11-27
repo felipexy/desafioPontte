@@ -1,19 +1,22 @@
-.flexContainter{
-    display: flex;
-    margin-top: 3%;
-    margin-right: auto;
-    margin-left: auto;
+.cardsFlexContainer{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cardOption {
-  border-radius: 25px;
+  border-radius: 10px;
   position: relative;
-  //width: 18%;
-
+  width: 16vw;
+  margin: 5px;
   height: auto;
   border: 2px solid rgb(3, 3, 58);
+  background: white;
 }
-    
+
 .cardOption::after {
   content: "";
   display: block;
@@ -21,6 +24,7 @@
 
 .cardOption:hover{
     background: rgb(3, 3, 58);
+    cursor: pointer;
     .cardMonthContent{
       color: white;
     }
@@ -29,7 +33,7 @@
     }
 }
 
-.cardOption:checked{
+.cardOption:focus{
     background: rgb(3, 3, 58);
     .cardMonthContent{
       color: white;
@@ -38,7 +42,6 @@
       color: white; 
     }
 }
-
 
 .cardMonthContent{
    justify-content: center;

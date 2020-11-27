@@ -1,0 +1,30 @@
+.flexContainer{
+    display: flex;    
+}
+
+.continueBtt{
+    border-radius: 50px;
+    width: 35%;
+    height: 6vw;
+    margin-top: 4%;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(90deg, rgba(130,0,131,1) 10%, rgba(14,0,153,1) 100%);
+}
+
+.continueBtt:hover{
+    background: linear-gradient(45deg, rgba(130,0,131,1) 10%, rgba(14,0,153,1) 100%);
+    cursor: pointer;
+    .content{
+      color: white;
+    }
+}
+
+.content{
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    color:white;
+    font-size: 1.7vw;
+}

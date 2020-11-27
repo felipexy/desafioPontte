@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
 import './CardMonths.scss';
+import { useDispatch } from 'react-redux';
 
 
 const CardMonths = ({months, value}) => {
 
-    const [optionSelect, setOptionSelected] = useState(false);
+    let [optionSelect, setOptionSelected] = useState(false);
+    const dispatch = useDispatch();
+    let valids = false;
 
     function handleClickOption(){
-        console.log(optionSelect);
-        setOptionSelected(true);
-        console.log(optionSelect);
+        //setOptionSelected(true);
+        valids = true;
+        //dispatch({ type: 'CHANGE_VALID', valid: valids } );
     }
 
     return (
-        <div className="flexContainter">
-        <button className="cardOption"  onClick={handleClickOption}>
-            <h3 className="cardMonthContent">{months} meses</h3>
-            <h2 className="cardValueContent">R$ {value}</h2>
-        </button>  
+        <div>
+            <button className="cardOption"  onClick={handleClickOption}>
+                <h3 className="cardMonthContent">{months} meses</h3>
+                <h2 className="cardValueContent">R$ {value}</h2>
+            </button>  
         </div>
     );
 };

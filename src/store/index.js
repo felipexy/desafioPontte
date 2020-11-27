@@ -6,11 +6,11 @@ function reducer(state = INITIAL_STATE, action){
     switch(action.type){
         case 'CHANGE_ID':
             return ({
-                id: action.id
+                id: action.id,
             });
         default: 
             return ({
-                id: state
+                id: state,
             });
     }
 }

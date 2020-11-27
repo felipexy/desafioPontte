@@ -4,14 +4,15 @@ import './ContinueBtt.scss';
 
 const ContinueBtt = ({}) => {
 
-    const [vali, setValid] = useState(false);
+    const [valid, setValid] = useState(false);
 
     function handleClick(){
+
     }
 
     return (
-        <div className="flexContainter">
-        <button className="cardOption"  onClick={handleClick}>Gostei, continuar</button>  
+        <div className="flexContainer">
+        <button className="continueBtt"  onClick={handleClick}><h2 className="content">Gostei, continuar</h2></button>  
         </div>
     );
 };
