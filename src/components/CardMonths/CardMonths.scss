@@ -1,0 +1,69 @@
+.flexContainter{
+    display: flex;
+    margin-top: 3%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cardOption {
+  border-radius: 25px;
+  position: relative;
+  //width: 18%;
+
+  height: auto;
+  border: 2px solid rgb(3, 3, 58);
+}
+    
+.cardOption::after {
+  content: "";
+  display: block;
+}
+
+.cardOption:hover{
+    background: rgb(3, 3, 58);
+    .cardMonthContent{
+      color: white;
+    }
+    .cardValueContent{
+      color: white; 
+    }
+}
+
+.cardOption:checked{
+    background: rgb(3, 3, 58);
+    .cardMonthContent{
+      color: white;
+    }
+    .cardValueContent{
+      color: white; 
+    }
+}
+
+
+.cardMonthContent{
+   justify-content: center;
+   position: relative;
+   width: fit-content;
+   margin-right: auto;
+   margin-left: auto;
+   color: rgb(3, 3, 58);
+   height: fit-content;
+   margin-top: 5%;
+   font-size: 2vw;
+   font-weight: normal;
+}
+
+
+.cardValueContent{
+   justify-content: center;
+   position: relative;
+   width: fit-content;
+   margin-right: auto;
+   margin-left: auto;
+   color: rgb(3, 3, 58);
+   height: fit-content;
+   margin-top: -2%;
+   font-size: 2vw;
+   font-weight: bold;
+}
+

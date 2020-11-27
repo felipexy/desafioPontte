@@ -1,0 +1,32 @@
+$desktop: 2000px;
+$notebook: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+
+.cardTitle {
+  border-radius: 25px;
+  position: relative;
+  width: 70%;
+  background:rgb(3, 3, 58);
+  margin-right: auto;
+  margin-left: auto;
+  height: min-content;
+  margin-top: -3.3%;
+}
+
+.cardTitle::after{
+  content: "";
+  display: block;
+  padding-bottom: 0%;
+}
+  
+.cardTitleContent {
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  height: min-content;
+  font-size: 2vw;
+}

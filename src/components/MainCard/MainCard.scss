@@ -1,0 +1,76 @@
+.MainCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  position: relative;
+  width: 90%;
+  background: white;
+  margin-right: auto;
+  margin-left: auto;
+  top: 100px;
+}
+  
+.MainCard::after {
+  content: "";
+  display: block;
+  padding-bottom: 40%;
+}
+
+.MainContent {
+  justify-content: center;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+  height: min-content;
+  font-size: 2vw;
+}
+
+.valueText {
+  margin-top: 1%;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(3, 3, 58);
+  height: min-content;
+  font-size: 4vw;
+}
+
+.grossAmount {
+  margin-top: -3%;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(3, 3, 58);
+  height: min-content;
+  font-size: 1.7vw;
+}
+
+.questMarkIcon {
+  content: url('../../Icons/questMark.png');
+  height: 20px;
+  width: 20px;
+  display: inline;
+  }
+
+
+.selectQty{
+  margin-top: 2%;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(149, 37, 147);
+  height: min-content;
+  font-size: 1.7vw;
+}
+
+.cardsFlexContainer{
+  display: flex;
+  position: relative;
+}
