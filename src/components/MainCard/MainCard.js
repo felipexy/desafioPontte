@@ -14,7 +14,7 @@ const MainCard = () => {
     const [loading, setLoading] = useState(false);
 
     const sliderPosition = useSelector(state => state.id);
-    //const OptChosen = useSelector(state => state.valid)
+    const OptChosen = useSelector(state => state.valid)
 
     useEffect(async () => {
         const response = await fetch('https://testfrontend.pontte.com.br/');
@@ -55,7 +55,6 @@ const MainCard = () => {
         const valueTitle = options.valoresEmprestimo[sliderPosition];
         const grossAmount = options.valoresEmprestimeBruto[sliderPosition];
         defineQtdeOptions();
-        //console.log(OptChosen);
         return (
             <div className="MainCard">
                 <CardTitle></CardTitle>
@@ -78,7 +77,7 @@ const MainCard = () => {
                         }
                         {cardOptions}
                     </div>
-                    <ContinueBtt></ContinueBtt>
+                    <ContinueBtt isValid={OptChosen}></ContinueBtt>
                 </div>
                 <p className="footer">Taxa de 1,09% ao mês. Valor da primeira parcela - Sistema de Amortização Constante (suas parcelas diminuem com o tempo).</p>
             </div>  

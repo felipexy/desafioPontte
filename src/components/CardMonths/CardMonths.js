@@ -10,9 +10,9 @@ const CardMonths = ({months, value}) => {
     let valids = false;
 
     function handleClickOption(){
-        //setOptionSelected(true);
-        valids = true;
-        //dispatch({ type: 'CHANGE_VALID', valid: valids } );
+        setOptionSelected(true);
+        valids = !valids;
+        dispatch({ type: 'CHANGE_VALID', valid: valids } );
     }
 
     return (
