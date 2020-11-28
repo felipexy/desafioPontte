@@ -5,12 +5,10 @@ import { useDispatch } from 'react-redux';
 const Slider = ({min, max}) => {
 
     let [rangeVal, setRangeVal] = useState(Math.floor(max/2));
-    let [lastValue, setlastValue] = useState(Math.floor(max/2));
     const dispatch = useDispatch();
 
     const handleChange = (event, max) => {
-        document.getElementById(`t${lastValue}`).style.zIndex = "1"; 
-        setlastValue(event.target.value);
+        document.getElementById(`t${rangeVal}`).style.zIndex = "1"; 
         setRangeVal(event.target.value)
         document.getElementById("Slider").style.background = `linear-gradient(90deg, rgb(139,185,38) ${event.target.value*((1/max)*100)}%, rgb(118,0,117) ${event.target.value*((1/max)*100)}%)` 
         document.getElementById(`t${event.target.value}`).style.zIndex = "-1";   
