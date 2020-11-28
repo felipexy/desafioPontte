@@ -2,7 +2,6 @@
   -webkit-appearance: none;
   display: flex;
   flex-direction: column;
-  //flex-direction: column;
   background: linear-gradient(90deg, rgb(139,185,38) 50%, rgb(118,0,117) 50%);
   width: 92%;
   height: 4px;
@@ -15,7 +14,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 0px;
-  width: 92%;
+  width: 98%;
   height: 4px;
   background: linear-gradient(90deg, rgb(139,185,38) 50%, rgb(118,0,117) 50%);
   -webkit-transition: 0.2s;
@@ -45,7 +44,7 @@
 
 .flexLabels{
   display: flex;
-  margin-top: -0.9%;  
+  margin-top: -0.9%;
 }
 
 .pull-left{
@@ -60,33 +59,47 @@
   font-size: 1.2vw;
 }
 
-.range-labels {
+.range-tickers {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0;
+  margin-left: -60px;
+  margin-right: -60px;
   list-style: none;
-  li {
-    position: relative;
-    float: left;
-    width: 100%;
-    text-align: center;
-    color:white;
-    
-    
-    &::before {
-      position: absolute;
-      top: -21px;
-      right: 0;
-      left: 0;
-      content: "";
-      margin: 0 auto;
-      width: 6px;
-      height: 6px;
-      background: white;
-      border-radius: 50%;
-    }
+  margin-bottom: -22px;
+}
+
+.ticker{
+  position: relative;
+  width: 100%;
+  &::before {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
   }
 }
 
 
+.tickerInvisible{
+  position: relative;
+  width: 100%;
+  &::before {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    content: "";
+    margin: 0 auto;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+  }
+  z-index: -1;
+}
