@@ -5,10 +5,13 @@
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: -10px;
 }
 
 .cardOption {
-  border-radius: 13px;
+  padding-top: 6%;
+  padding-bottom: 0%;
+  border-radius: 10px;
   position: relative;
   width: 16vw;
   margin: 5px;
@@ -44,29 +47,29 @@
 }
 
 .cardMonthContent{
-   justify-content: center;
-   position: relative;
-   width: fit-content;
-   margin-right: auto;
-   margin-left: auto;
-   color: rgb(3, 3, 58);
-   height: fit-content;
-   margin-top: 5%;
-   font-size: 2vw;
-   font-weight: normal;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(3, 3, 58);
+  height: fit-content;
+  margin-top: 5%;
+  font-size: 1.7vw;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
-
 .cardValueContent{
-   justify-content: center;
-   position: relative;
-   width: fit-content;
-   margin-right: auto;
-   margin-left: auto;
-   color: rgb(3, 3, 58);
-   height: fit-content;
-   margin-top: -2%;
-   font-size: 2vw;
-   font-weight: bold;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(3, 3, 58);
+  height: fit-content;
+  margin-top: -2%;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
