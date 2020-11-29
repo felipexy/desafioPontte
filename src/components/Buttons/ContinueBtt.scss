@@ -13,7 +13,7 @@
 }
 
 .continueBttValid:hover{
-    background: linear-gradient(45deg, rgba(130,0,131,1) 10%, rgba(14,0,153,1) 100%);
+    background: linear-gradient(30deg, rgba(130,0,131,1) 10%, rgba(14,0,153,1) 100%);
     cursor: pointer;
     .content{
       color: white;
@@ -28,6 +28,7 @@
     margin-right: auto;
     margin-left: auto;
     background: gray;
+    pointer-events: none;
     .content{
         font-weight: bold;
         margin-right: auto;
@@ -37,8 +38,6 @@
         font-size: 1.7vw;
     }
 }
-
-
 
 .content{
     font-weight: bold;

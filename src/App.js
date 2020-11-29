@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import MainCard from "./components/MainCard/MainCard"
 import { Provider } from 'react-redux';
