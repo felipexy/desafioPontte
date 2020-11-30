@@ -17,9 +17,9 @@ const CardMonths = ({months, value}) => {
 
     return (
         <div>
-            <button className="cardOption"  onClick={handleClickOption}>
-                <h3 className="cardMonthContent">{months} meses</h3>
-                <h2 className="cardValueContent">R$ {value}</h2>
+            <button className="cards__cardOption"  onClick={handleClickOption}>
+                <h3 className="cards__cardMonthContent">{months} meses</h3>
+                <h2 className="cards__cardValueContent">R$ {value}</h2>
             </button>  
         </div>
     );

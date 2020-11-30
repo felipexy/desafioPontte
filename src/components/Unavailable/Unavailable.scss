@@ -1,0 +1,23 @@
+.unavailable {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  width: 90%;
+  background: white;
+  margin-right: auto;
+  margin-left: auto;
+  top: 100px;
+}
+    
+.unavailable::after {
+  content: "";
+  display: block;
+  padding-bottom: 2%;
+}
+  
+
+.unavailable__notWorking{
+  margin-right: auto;
+  margin-left: auto;
+}

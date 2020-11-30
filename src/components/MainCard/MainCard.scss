@@ -1,4 +1,4 @@
-.MainCard {
+.mainCard {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -10,7 +10,7 @@
   top: 100px;
 }
   
-.MainCard::after {
+.mainCard::after {
   content: "";
   display: block;
   padding-bottom: 2%;
@@ -26,7 +26,7 @@
   font-size: 2vw;
 }
 
-.valueText {
+.mainCard__valueText {
   margin-top: 2%;
   justify-content: center;
   position: relative;
@@ -38,7 +38,7 @@
   font-size: 5vw;
 }
 
-.grossAmount {
+.mainCard__grossAmount {
   margin-top: -4%;
   justify-content: center;
   position: relative;
@@ -50,7 +50,7 @@
   font-size: 2vw;
 }
 
-.selectQty{
+.mainCard__selectQty{
   margin-top: 0.4%;
   justify-content: center;
   position: relative;
@@ -62,15 +62,10 @@
   font-size: 1.9vw;
 }
 
-.footer{
+.mainCard__footer{
   margin-right: auto;
   margin-left: auto;
   font-size: 1.2vw;
   font-weight: 500;
   color:  rgb(3, 3, 58);
-}
-
-.notWorking{
-  margin-right: auto;
-  margin-left: auto;
 }

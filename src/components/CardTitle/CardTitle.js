@@ -6,7 +6,7 @@ const CardTitle = () => {
     
     return (
         <div className="cardTitle">
-            <h2 className="cardTitleContent">Valor Solicitado</h2>
+            <h2 className="cardTitle__cardTitleContent">Valor Solicitado</h2>
         </div>  
     );
 };

@@ -1,4 +1,4 @@
-.cardsFlexContainer{
+.cards{
   display: flex;
   position: relative;
   justify-content: center;
@@ -8,7 +8,7 @@
   margin-bottom: -10px;
 }
 
-.cardOption {
+.cards__cardOption {
   padding-top: 6%;
   padding-bottom: 0%;
   border-radius: 10px;
@@ -20,33 +20,34 @@
   background: white;
 }
 
-.cardOption::after {
+.cards__cardOption::after {
   content: "";
   display: block;
 }
 
-.cardOption:hover{
+.cards__cardOption:hover{
     background: rgb(3, 3, 58);
     cursor: pointer;
-    .cardMonthContent{
+    .cards__cardMonthContent{
       color: white;
     }
-    .cardValueContent{
+    .cards__cardValueContent{
       color: white; 
     }
 }
 
-.cardOption:focus{
+.cards__cardOption:focus{
     background: rgb(3, 3, 58);
-    .cardMonthContent{
+    outline:0 !important;
+    .cards__cardMonthContent{
       color: white;
     }
-    .cardValueContent{
+    .cards__cardValueContent{
       color: white; 
     }
 }
 
-.cardMonthContent{
+.cards__cardMonthContent{
   justify-content: center;
   position: relative;
   width: fit-content;
@@ -60,7 +61,7 @@
   margin-bottom: 5px;
 }
 
-.cardValueContent{
+.cards__cardValueContent{
   justify-content: center;
   position: relative;
   width: fit-content;

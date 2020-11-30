@@ -2,27 +2,27 @@ import React, { useState } from 'react';
 import './Slider.scss';
 import { useDispatch } from 'react-redux';
 
-const Slider = ({min, max}) => {
+const Slider = ({min, maxPrazos, minValue, maxValue}) => {
 
-    let [rangeVal, setRangeVal] = useState(Math.floor(max/2));
+    let [rangeVal, setRangeVal] = useState(Math.floor(maxPrazos/2));
     const dispatch = useDispatch();
 
-    const handleChange = (event, max) => {
+    const handleChange = (event, maxPrazos, ) => {
         document.getElementById(`t${rangeVal}`).style.zIndex = "1"; 
         setRangeVal(event.target.value)
-        document.getElementById("Slider").style.background = `linear-gradient(90deg, rgb(139,185,38) ${event.target.value*((1/max)*100)}%, rgb(118,0,117) ${event.target.value*((1/max)*100)}%)` 
+        document.getElementById("Slider").style.background = `linear-gradient(90deg, rgb(139,185,38) ${event.target.value*((1/maxPrazos)*100)}%, rgb(118,0,117) ${event.target.value*((1/maxPrazos)*100)}%)` 
         document.getElementById(`t${event.target.value}`).style.zIndex = "-1";   
-        dispatch({ type: 'CHANGE_ID', id: event.target.value } )
+        dispatch({ type: 'CHANGE_ID', id: event.target.value })
     }
 
-    var lista = [];
-    function listOfDots(){ 
-        for (var i = 0; i <= max; i++){
-             
-            if(i === Math.floor(max/2)){
-                lista.push(<li key={i} id={`t${i}`} className="tickerInvisible"></li>)
+    var listOfDots = [];
+
+    function populatelistOfDots(){ 
+        for (var i = 0; i <= maxPrazos; i++){
+            if(i === Math.floor(maxPrazos/2)){
+                listOfDots.push(<li key={i} id={`t${i}`} className="tickList__ticker--Invisible"></li>)
             } else{
-            lista.push(<li key={i} id={`t${i}`} className="ticker"></li>)
+                listOfDots.push(<li key={i} id={`t${i}`} className="tickList__ticker"></li>)
             }
         }
     }
@@ -30,13 +30,17 @@ const Slider = ({min, max}) => {
     return (
         <div>
             <div className="sliderContainer"> 
-                <input id="Slider" type="range" className="slider" min={min} max={max} value={rangeVal} step="1"
-                onChange={(event) => handleChange(event,max)} style={{background: `linear-gradient(90deg, rgb(139,185,38) ${rangeVal*((1/max)*100)}%, rgb(118,0,117) ${rangeVal*((1/max)*100)}%)`}}/>
+                <input id="Slider" type="range" className="sliderContainer__slider" min={min} max={maxPrazos} value={rangeVal} step="1"
+                onChange={(event) => handleChange(event,maxPrazos)} style={{background: `linear-gradient(90deg, rgb(139,185,38) ${rangeVal*((1/maxPrazos)*100)}%, rgb(118,0,117) ${rangeVal*((1/maxPrazos)*100)}%)`}}/>
             </div>
-                <ul className="range-tickers">
-                    {listOfDots()}
-                    {lista}
-                </ul>
+            <ul className="tickList">
+                {populatelistOfDots()}
+                {listOfDots}
+            </ul>
+            <div className="flexLabels">
+                <p className="flexLabels__pull-left">R${minValue}</p>
+                <p className="flexLabels__pull-right">R${maxValue}</p>
+            </div>
         </div>
     );
   };
