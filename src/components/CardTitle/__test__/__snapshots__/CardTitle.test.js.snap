@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for CardTitle component Matches snapshot 1`] = `
+<div
+  className="cardTitle"
+>
+  <h2
+    className="cardTitle__cardTitleContent"
+    data-testid="cdTitle"
+  >
+    Valor Solicitado
+  </h2>
+</div>
+`;

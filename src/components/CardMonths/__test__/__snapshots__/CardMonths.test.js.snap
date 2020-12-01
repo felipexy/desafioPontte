@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for CardMonths component with Redux Matches snapshot 1`] = `
+<div>
+  <button
+    className="cards__cardOption"
+    data-testid="cardM"
+    onClick={[Function]}
+    type="submit"
+  >
+    <h3
+      className="cards__cardMonthContent"
+    >
+       meses
+    </h3>
+    <h2
+      className="cards__cardValueContent"
+    >
+      R$ 
+    </h2>
+  </button>
+</div>
+`;

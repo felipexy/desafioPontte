@@ -9,15 +9,14 @@
   margin-left: auto;
   top: 100px;
 }
-    
+
 .unavailable::after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 2%;
 }
-  
 
-.unavailable__notWorking{
+.unavailable__notWorking {
   margin-right: auto;
   margin-left: auto;
 }

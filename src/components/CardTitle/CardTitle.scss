@@ -2,7 +2,7 @@
   border-radius: 15px;
   position: relative;
   width: 70%;
-  background:rgb(3, 3, 58);
+  background: rgb(3, 3, 58);
   margin-right: auto;
   margin-left: auto;
   height: min-content;
@@ -10,11 +10,11 @@
   height: 5vw;
 }
 
-.cardTitle::after{
-  content: "";
+.cardTitle::after {
+  content: '';
   display: block;
 }
-  
+
 .cardTitle__cardTitleContent {
   justify-content: center;
   position: relative;

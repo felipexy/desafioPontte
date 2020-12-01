@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for ContinueBtt component Matches snapshot (Valid) 1`] = `
+<div
+  className="buttonContainer"
+>
+  <button
+    className="buttonContainer__continueBtt"
+    data-testid="contBtt"
+    onClick={[Function]}
+    type="submit"
+  >
+    <h2
+      className="buttonContainer__continueBtt__content"
+    >
+      Gostei, continuar
+    </h2>
+  </button>
+</div>
+`;
+
+exports[`Tests for ContinueBtt component Matches snapshot (notValid) 1`] = `
+<div
+  className="buttonContainer"
+>
+  <button
+    className="buttonContainer__continueBtt--NotValid"
+    data-testid="contBtt"
+    onClick={[Function]}
+    type="submit"
+  >
+    <h2
+      className="content"
+    >
+      Gostei, continuar
+    </h2>
+  </button>
+</div>
+`;

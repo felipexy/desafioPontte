@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for Unavailable component Matches snapshot 1`] = `
+<div
+  className="unavailable"
+>
+  <h1
+    className="unavailable__notWorking"
+    data-testid="unaTest"
+  >
+    Sistema fora do ar, tente novamente mais tarde! :(
+  </h1>
+</div>
+`;

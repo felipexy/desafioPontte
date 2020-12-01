@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for CardMonths component with Redux Matches snapshot 1`] = `
+<div>
+  <div
+    className="sliderContainer"
+  >
+    <input
+      className="sliderContainer__slider"
+      data-testid="sliderTest"
+      id="Slider"
+      onChange={[Function]}
+      step="1"
+      style={
+        Object {
+          "background": "linear-gradient(90deg, rgb(139,185,38) NaN%, rgb(118,0,117) NaN%)",
+        }
+      }
+      type="range"
+      value={NaN}
+    />
+  </div>
+  <ul
+    className="tickList"
+  />
+  <div
+    className="flexLabels"
+  >
+    <p
+      className="flexLabels__pull-left"
+    >
+      R$
+    </p>
+    <p
+      className="flexLabels__pull-right"
+    >
+      R$
+    </p>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-.cards{
+.cards {
   display: flex;
   position: relative;
   justify-content: center;
@@ -21,33 +21,33 @@
 }
 
 .cards__cardOption::after {
-  content: "";
+  content: '';
   display: block;
 }
 
-.cards__cardOption:hover{
-    background: rgb(3, 3, 58);
-    cursor: pointer;
-    .cards__cardMonthContent{
-      color: white;
-    }
-    .cards__cardValueContent{
-      color: white; 
-    }
+.cards__cardOption:hover {
+  background: rgb(3, 3, 58);
+  cursor: pointer;
+  .cards__cardMonthContent {
+    color: white;
+  }
+  .cards__cardValueContent {
+    color: white;
+  }
 }
 
-.cards__cardOption:focus{
-    background: rgb(3, 3, 58);
-    outline:0 !important;
-    .cards__cardMonthContent{
-      color: white;
-    }
-    .cards__cardValueContent{
-      color: white; 
-    }
+.cards__cardOption:focus {
+  background: rgb(3, 3, 58);
+  outline: 0 !important;
+  .cards__cardMonthContent {
+    color: white;
+  }
+  .cards__cardValueContent {
+    color: white;
+  }
 }
 
-.cards__cardMonthContent{
+.cards__cardMonthContent {
   justify-content: center;
   position: relative;
   width: fit-content;
@@ -61,7 +61,7 @@
   margin-bottom: 5px;
 }
 
-.cards__cardValueContent{
+.cards__cardValueContent {
   justify-content: center;
   position: relative;
   width: fit-content;
@@ -73,4 +73,3 @@
   font-size: 2vw;
   font-weight: bold;
 }
-

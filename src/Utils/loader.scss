@@ -1,16 +1,20 @@
 .loader {
-    border: 16px solid rgb(149, 37, 147); 
-    border-top: 16px solid rgb(3, 3, 58); 
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30%;
+  border: 16px solid rgb(149, 37, 147);
+  border-top: 16px solid rgb(3, 3, 58);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
   }
+}

@@ -9,9 +9,9 @@
   margin-left: auto;
   top: 100px;
 }
-  
+
 .mainCard::after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 2%;
 }
@@ -50,7 +50,7 @@
   font-size: 2vw;
 }
 
-.mainCard__selectQty{
+.mainCard__selectQty {
   margin-top: 0.4%;
   justify-content: center;
   position: relative;
@@ -62,10 +62,10 @@
   font-size: 1.9vw;
 }
 
-.mainCard__footer{
+.mainCard__footer {
   margin-right: auto;
   margin-left: auto;
   font-size: 1.2vw;
   font-weight: 500;
-  color:  rgb(3, 3, 58);
+  color: rgb(3, 3, 58);
 }
