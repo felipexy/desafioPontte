@@ -6,7 +6,7 @@ Frontend Challenge for hiring process at Pontte
 Desenvolver um componente que mostre o range de valores para um empréstimo e os valores e números de parcelas de acordo com o valor selecionado.
 
 # Layout to be reached
-![Alt text](./../images/objective.png)
+![](images/objective.png)
 
 # Reached Layout
 
