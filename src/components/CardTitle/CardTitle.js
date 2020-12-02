@@ -1,6 +1,7 @@
 import React from 'react';
 import './CardTitle.scss';
 
+//  Título do card principal
 const CardTitle = () => {
   return (
     <div className="cardTitle">

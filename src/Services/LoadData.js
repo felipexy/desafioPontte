@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+//  Função responsável por fazer o Fetch na API e setar o loading para a aplicação
 function LoadData() {
   const [dataAPI, setDataAPI] = useState({});
   const [loading, setLoading] = useState(false);

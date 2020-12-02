@@ -115,21 +115,6 @@ describe('Tests for CardMonths component with Redux', () => {
     const { getByTestId } = renderWithRedux(<Slider />);
   });
 
-  it('Check if onChange is called', async () => {
-    const { getByTestId } = renderWithRedux(
-      <Slider
-        min="0"
-        maxPrazos="4"
-        minValue="70.000,00"
-        maxValue="130.000,00"
-      />
-    );
-
-    const sldTst = await waitFor(() => getByTestId('sliderTest'));
-    fireEvent.change(sldTst, { target: { value: '5' } });
-    // expect(sldTst).toBeTruthy();
-  });
-
   it('Matches snapshot', () => {
     const tree = renderer
       .create(

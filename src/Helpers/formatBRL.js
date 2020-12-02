@@ -1,3 +1,5 @@
+//  Formata os números de acordo com a moeda REAL - BRL
+
 const rgx = /(\d+)(\d{3})/;
 
 function formatValues(value) {

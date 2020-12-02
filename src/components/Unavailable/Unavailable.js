@@ -1,6 +1,7 @@
 import React from 'react';
 import './Unavailable.scss';
 
+//  Componente Unavailable
 const Unavailable = () => {
   return (
     <div className="unavailable">

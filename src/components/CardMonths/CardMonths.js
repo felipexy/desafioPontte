@@ -2,13 +2,15 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import './CardMonths.scss';
 
+//  Recebe o mês e o valor da parcela
 const CardMonths = ({ months, value }) => {
   const dispatch = useDispatch();
   let valids = false;
 
+  //  Ao selecionar a opção de parcela, atualiza o estado "valid" no Redux para habilitar o botão principal
   function handleClickOption() {
     valids = !valids;
-    dispatch({ type: 'CHANGE_VALID', valid: valids });
+    dispatch({ type: 'CHANGE_VALID', valid: valids }); // atualiza o Redux
   }
 
   return (

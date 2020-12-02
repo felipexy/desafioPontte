@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContinueBtt.scss';
 
+//  Recebe "isValid" para validar se o botão deve ser habilitado ou não
 const ContinueBtt = ({ isValid }) => {
   function handleClick() {}
 

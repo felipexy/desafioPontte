@@ -11,14 +11,17 @@ import Unavailable from '../Unavailable/Unavailable';
 import formatValues from '../../Helpers/formatBRL';
 
 const MainCard = () => {
+  //  Cria variáveis com valores acessados no Redux
   const sliderPosition = useSelector((state) => state.id);
   const OptChosen = useSelector((state) => state.valid);
   const loading = useSelector((state) => state.loading);
-  const options = useSelector((state) => state.data);
+  const options = useSelector((state) => state.data); //  Recebe os dados da API
 
+  //  Variáveis setadas para receber os cards de opções de parcelas
   const cardOptions = [];
   let qtdeOptions = 0;
 
+  //  Percorre o JSON recebido para definir o número de opções disponíveis. Tal valor será usado para setar o número de cards e as opções do slider
   function defineQtdeOptions() {
     options.prazos.forEach((prazo) => {
       qtdeOptions++;
@@ -26,6 +29,7 @@ const MainCard = () => {
     return qtdeOptions;
   }
 
+  //  Realiza o Push no array de opções de cards para renderizar corretamente todos os cards
   function optionCardMount(valor) {
     for (let i = 0; i < qtdeOptions; i++) {
       cardOptions.push(
@@ -38,11 +42,14 @@ const MainCard = () => {
     }
   }
 
+  //  Checa se o fetch na API já foi realizado. Caso não, renderiza um loader
   if (loading) {
     defineQtdeOptions();
-    const valueTitle = options.valoresEmprestimo[sliderPosition];
-    const grossAmount = options.valoresEmprestimeBruto[sliderPosition];
+    const valueTitle = options.valoresEmprestimo[sliderPosition]; //  Valor principal mostrado no layout
+    const grossAmount = options.valoresEmprestimeBruto[sliderPosition]; //  Valor bruto no layout
+    //  Checa se existe ao menos 1 opção de parcela e no máximo 5. Caso não, renderiza o componente "Unavailable"
     if (qtdeOptions >= 1 && qtdeOptions < 6) {
+      //  Monta o card principal com os componentes necessários e formatando os valores com a função "formatValues()"
       return (
         <div className="mainCard">
           <CardTitle />

@@ -7,11 +7,12 @@ import renderer from 'react-test-renderer';
 afterEach(cleanup);
 
 describe('Tests for Unavailable component', () => {
-    
   it('Renders right phrase', async () => {
     const { getByTestId } = render(<Unavailable />);
     const unvlbTst = await waitFor(() => getByTestId('unaTest'));
-    expect(unvlbTst).toHaveTextContent('Sistema fora do ar, tente novamente mais tarde! :(');
+    expect(unvlbTst).toHaveTextContent(
+      'Sistema fora do ar, tente novamente mais tarde! :('
+    );
   });
 
   it('Matches snapshot', () => {
